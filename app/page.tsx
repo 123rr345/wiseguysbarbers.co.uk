@@ -6,6 +6,7 @@ import About from "@/components/About";
 import BookingCTA from "@/components/BookingCTA";
 import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
+import FloatingSocial from "@/components/FloatingSocial";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -70,6 +71,7 @@ export default function Home() {
         <Visit />
       </main>
       <Footer />
+      <FloatingSocial />
     </>
   );
 }

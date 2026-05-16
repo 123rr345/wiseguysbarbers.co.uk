@@ -79,11 +79,11 @@ export default function Gallery() {
                     alt={img.alt}
                     width={600}
                     height={750}
-                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-auto object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
-                    <span className="text-cream font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm uppercase tracking-wider">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-4">
+                    <span className="text-cream font-medium text-sm uppercase tracking-wider bg-gold/90 px-3 py-1 rounded">
                       View
                     </span>
                   </div>
