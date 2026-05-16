@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
 
 function InstagramIcon({ className }: { className?: string }) {
@@ -17,15 +18,14 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center">
-                <span className="font-serif font-bold text-gold text-sm">
-                  WG
-                </span>
-              </div>
-              <span className="font-serif text-xl font-bold text-cream">
-                Wise Guys Barbers
-              </span>
+            <div className="mb-4">
+              <Image
+                src="/logo.svg"
+                alt="Wise Guys Barbers"
+                width={160}
+                height={60}
+                className="h-14 w-auto brightness-110"
+              />
             </div>
             <p className="text-cream/50 text-sm leading-relaxed">
               Hoddesdon&apos;s home for sharp cuts, skin fades, beard trims,

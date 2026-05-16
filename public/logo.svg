@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" fill="none">
+  <!-- Circle -->
+  <circle cx="100" cy="100" r="72" stroke="#D4D4D4" stroke-width="1.5" fill="none"/>
+
+  <!-- Stylised WG monogram -->
+  <!-- Upper arc (G curve) -->
+  <path d="M60 58 A55 55 0 0 1 140 58" stroke="#D4D4D4" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+  <!-- Left arm of W going down to first valley -->
+  <line x1="60" y1="58" x2="78" y2="130" stroke="#D4D4D4" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- First valley to center peak -->
+  <line x1="78" y1="130" x2="100" y2="75" stroke="#D4D4D4" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Center peak to second valley -->
+  <line x1="100" y1="75" x2="122" y2="130" stroke="#D4D4D4" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Second valley to right arm of W -->
+  <line x1="122" y1="130" x2="140" y2="58" stroke="#D4D4D4" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- WISE GUYS text -->
+  <text x="100" y="210" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="300" font-size="20" letter-spacing="6" fill="#D4D4D4">WISE GUYS</text>
+</svg>

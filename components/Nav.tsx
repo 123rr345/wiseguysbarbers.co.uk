@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -29,13 +30,15 @@ export default function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full border-2 border-gold flex items-center justify-center">
-            <span className="font-serif font-bold text-gold text-sm">WG</span>
-          </div>
-          <span className="font-serif text-xl font-bold text-cream hidden sm:block">
-            Wise Guys
-          </span>
+        <a href="#" className="flex items-center gap-2">
+          <Image
+            src="/logo.svg"
+            alt="Wise Guys Barbers"
+            width={140}
+            height={50}
+            className="h-10 w-auto brightness-110"
+            priority
+          />
         </a>
 
         {/* Desktop links */}
