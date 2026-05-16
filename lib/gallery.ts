@@ -21,7 +21,6 @@ export const galleryImages: GalleryImage[] = [
   { src: "/gallery/cut-15.jpg", alt: "Mid fade with beard trim", category: "Beards" },
   { src: "/gallery/cut-16.jpg", alt: "Perm and fade combination", category: "Perms" },
   { src: "/gallery/cut-17.jpg", alt: "Perm rods in progress", category: "Perms" },
-  { src: "/gallery/cut-18.jpg", alt: "Perms sign at Wise Guys", category: "Shop" },
   { src: "/gallery/cut-19.jpg", alt: "Clean buzz cut fade", category: "Fades" },
   { src: "/gallery/cut-20.jpg", alt: "Fresh textured fade", category: "Fades" },
 ];
