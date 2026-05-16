@@ -32,11 +32,11 @@ export default function Nav() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Wise Guys Barbers"
-            width={140}
-            height={50}
-            className="h-10 w-auto brightness-110"
+            width={197}
+            height={189}
+            className="h-12 w-auto"
             priority
           />
         </a>

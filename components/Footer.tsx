@@ -20,11 +20,11 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Wise Guys Barbers"
-                width={160}
-                height={60}
-                className="h-14 w-auto brightness-110"
+                width={197}
+                height={189}
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-cream/50 text-sm leading-relaxed">
