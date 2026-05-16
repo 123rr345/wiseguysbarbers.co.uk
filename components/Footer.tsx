@@ -24,7 +24,7 @@ export default function Footer() {
                 alt="Wise Guys Barbers"
                 width={197}
                 height={189}
-                className="h-16 w-auto"
+                className="h-24 w-auto"
               />
             </div>
             <p className="text-cream/50 text-sm leading-relaxed">

@@ -28,7 +28,7 @@ export default function Nav() {
         scrolled ? "bg-dark/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
           <Image
@@ -36,7 +36,7 @@ export default function Nav() {
             alt="Wise Guys Barbers"
             width={197}
             height={189}
-            className="h-12 w-auto"
+            className="h-20 w-auto"
             priority
           />
         </a>
