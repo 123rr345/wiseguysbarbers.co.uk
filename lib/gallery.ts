@@ -20,6 +20,7 @@ export const galleryImages: GalleryImage[] = [
   { src: "/gallery/cut-13.jpg", alt: "Fresh crop fade side profile", category: "Fades" },
   { src: "/gallery/cut-14.jpg", alt: "Skin fade with beard shape-up", category: "Beards" },
   { src: "/gallery/cut-15.jpg", alt: "Afro curls back view", category: "Fades" },
+  { src: "/gallery/cut-16.jpg", alt: "Classic taper with styled top", category: "Fades" },
 ];
 
 export const categories = ["All", "Fades", "Beards", "Perms"];

@@ -7,6 +7,7 @@ import BookingCTA from "@/components/BookingCTA";
 import Visit from "@/components/Visit";
 import Footer from "@/components/Footer";
 import FloatingSocial from "@/components/FloatingSocial";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -61,6 +62,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <ScrollToTop />
       <Nav />
       <main>
         <Hero />
