@@ -37,6 +37,14 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="32x32" />
         <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if(history.scrollRestoration){history.scrollRestoration='manual'}
+              if(window.location.hash){history.replaceState(null,'',window.location.pathname)}
+            `,
+          }}
+        />
       </head>
       <body className="font-sans antialiased">{children}</body>
     </html>

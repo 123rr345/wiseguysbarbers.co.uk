@@ -8,10 +8,12 @@ export default function ScrollToTop() {
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual";
     }
-    // Force scroll to top on page load/refresh (unless navigating to a hash)
-    if (!window.location.hash) {
-      window.scrollTo(0, 0);
+    // Clear any hash from the URL so browser doesn't auto-scroll to anchors
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
     }
+    // Force scroll to top
+    window.scrollTo(0, 0);
   }, []);
 
   return null;
