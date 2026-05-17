@@ -8,8 +8,8 @@ export default function BookingCTA() {
     <section className="relative py-32 md:py-40 overflow-hidden">
       {/* Background */}
       <Image
-        src="/gino.jpg"
-        alt="Gino D'Acampo getting a fresh cut at Wise Guys Barbers"
+        src="/team.jpg"
+        alt="The Wise Guys Barbers team with a happy customer"
         fill
         className="object-cover"
         loading="lazy"
