@@ -15,8 +15,8 @@ function InstagramIcon({ className }: { className?: string }) {
 
 const stats = [
   { value: "22+", label: "Years Experience" },
-  { value: "2.5M+", label: "Instagram Followers" },
   { value: "7", label: "Days a Week" },
+  { value: "∞", label: "Walk-ins Welcome" },
 ];
 
 export default function About() {
@@ -95,43 +95,56 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Viral / Instagram Feature */}
+        {/* Celebrity Visit — Gino D'Acampo */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-24 relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-white/[0.04] to-white/[0.01]"
+          className="mt-24 relative overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-br from-gold/[0.06] to-white/[0.02]"
         >
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-          <div className="relative z-10 p-8 md:p-12 lg:p-16 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div className="flex-shrink-0">
-              <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center">
-                <InstagramIcon className="w-12 h-12 md:w-14 md:h-14 text-white" />
-              </div>
+          <div className="absolute top-0 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+
+          <div className="relative z-10 grid md:grid-cols-5 gap-0">
+            {/* Photo */}
+            <div className="md:col-span-2 relative">
+              <Image
+                src="/gino.jpg"
+                alt="Gino D'Acampo visiting Wise Guys Barbers in Hoddesdon"
+                width={600}
+                height={900}
+                className="w-full h-full object-cover md:rounded-l-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent md:hidden" />
             </div>
-            <div className="text-center md:text-left">
+
+            {/* Copy */}
+            <div className="md:col-span-3 p-8 md:p-12 lg:p-16 flex flex-col justify-center">
               <p className="text-gold uppercase tracking-[0.3em] text-xs mb-3">
-                Gone Viral
+                Celebrity Approved
               </p>
               <h3 className="font-serif text-3xl md:text-4xl font-bold text-cream mb-4">
-                2.5 Million Followers & Counting
+                Gino D&apos;Acampo Stopped By
               </h3>
-              <p className="text-cream/60 text-lg leading-relaxed mb-6 max-w-2xl">
-                What started as a local barbershop in Hoddesdon has become an
-                internet sensation. With over 2.5 million followers on Instagram,
-                our work has reached millions worldwide — but the same precision,
-                passion and personal touch that built that following is exactly
-                what you get when you walk through our doors.
+              <p className="text-cream/60 text-lg leading-relaxed mb-4">
+                TV chef and Instagram star Gino D&apos;Acampo — with over
+                2.4 million followers — chose Wise Guys for a fresh cut
+                while visiting Hoddesdon. It was an absolute honour to
+                have him in the chair.
+              </p>
+              <p className="text-cream/60 text-lg leading-relaxed mb-8">
+                When someone with millions of followers trusts you with
+                their look, you know you&apos;re doing something right.
               </p>
               <a
                 href="https://www.instagram.com/wiseguyshoddesdon"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] hover:opacity-90 text-white font-semibold px-6 py-3 rounded-lg text-sm tracking-wide transition-opacity"
+                className="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-dark font-semibold px-6 py-3 rounded-lg text-sm tracking-wide transition-colors w-fit"
               >
                 <InstagramIcon className="w-4 h-4" />
-                Follow @wiseguyshoddesdon
+                See More on Instagram
               </a>
             </div>
           </div>
