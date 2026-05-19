@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryImages, categories } from "@/lib/gallery";
+import { asset } from "@/lib/config";
 
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
@@ -75,7 +76,7 @@ export default function Gallery() {
               >
                 <div className="relative overflow-hidden rounded-lg">
                   <Image
-                    src={img.src}
+                    src={asset(img.src)}
                     alt={img.alt}
                     width={600}
                     height={750}
@@ -155,7 +156,7 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={filtered[lightbox].src}
+                src={asset(filtered[lightbox].src)}
                 alt={filtered[lightbox].alt}
                 width={1200}
                 height={1500}

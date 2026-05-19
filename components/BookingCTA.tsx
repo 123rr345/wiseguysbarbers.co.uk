@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/config";
 
 export default function BookingCTA() {
   return (
     <section className="relative py-32 md:py-40 overflow-hidden">
       {/* Background */}
       <Image
-        src="/team.jpg"
+        src={asset("/team.jpg")}
         alt="The Wise Guys Barbers team with a happy customer"
         fill
         className="object-cover"

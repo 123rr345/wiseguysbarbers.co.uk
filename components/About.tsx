@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/config";
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -34,7 +35,7 @@ export default function About() {
           >
             <div className="relative rounded-lg overflow-hidden">
               <Image
-                src="/gallery/cut-08.jpg"
+                src={asset("/gallery/cut-08.jpg")}
                 alt="Inside Wise Guys Barbers, Hoddesdon"
                 width={700}
                 height={500}
@@ -110,7 +111,7 @@ export default function About() {
             {/* Photo */}
             <div className="md:col-span-2 relative">
               <Image
-                src="/gino.jpg"
+                src={asset("/gino.jpg")}
                 alt="Gino D'Acampo visiting Wise Guys Barbers in Hoddesdon"
                 width={600}
                 height={900}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
+import { asset } from "@/lib/config";
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
           <div>
             <div className="mb-4">
               <Image
-                src="/logo.png"
+                src={asset("/logo.png")}
                 alt="Wise Guys Barbers"
                 width={197}
                 height={189}

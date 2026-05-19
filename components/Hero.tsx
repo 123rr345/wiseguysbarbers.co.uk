@@ -2,13 +2,14 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { asset } from "@/lib/config";
 
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background image — shop interior */}
       <Image
-        src="/gallery/cut-08.jpg"
+        src={asset("/gallery/cut-08.jpg")}
         alt="Wise Guys Barbers shop interior with hexagon lights"
         fill
         className="object-cover"

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { asset } from "@/lib/config";
 
 const links = [
   { label: "Services", href: "#services" },
@@ -39,7 +40,7 @@ export default function Nav() {
             }`}
           >
             <Image
-              src="/logo.png"
+              src={asset("/logo.png")}
               alt="Wise Guys Barbers"
               width={197}
               height={189}
