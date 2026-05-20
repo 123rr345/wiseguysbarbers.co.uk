@@ -99,15 +99,10 @@ export default function Footer() {
             © {new Date().getFullYear()} Wise Guys Barbers. All rights
             reserved.
           </p>
-          <p className="text-cream/20 text-xs">
-            Site by{" "}
-            <a
-              href="mailto:a_corduneanu@icloud.com"
-              className="text-cream/30 hover:text-gold transition-colors"
-            >
-              Alex Corduneanu
-            </a>
-          </p>
+          <div className="text-cream/20 text-xs text-center sm:text-right">
+            <p>Site by <span className="text-cream/30">Alex Corduneanu</span></p>
+            <p className="text-cream/20 mt-0.5">a_corduneanu@icloud.com</p>
+          </div>
         </div>
       </div>
     </footer>
