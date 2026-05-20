@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Web Design */}
           <div>
-            <h4 className="font-serif text-lg font-semibold text-gold mb-4">
+            <h4 className="font-serif text-lg font-semibold text-cream mb-4">
               Website by
             </h4>
             <p className="text-cream text-sm font-semibold">
