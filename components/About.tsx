@@ -17,7 +17,7 @@ function InstagramIcon({ className }: { className?: string }) {
 const stats = [
   { value: "22+", label: "Years Experience" },
   { value: "7", label: "Days a Week" },
-  { value: "∞", label: "Walk-ins Welcome" },
+  { value: "0", label: "Appointments Needed" },
 ];
 
 export default function About() {
@@ -42,7 +42,6 @@ export default function About() {
                 className="w-full h-auto object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-2 border-gold/30 rounded-lg hidden lg:block" />
           </motion.div>
 
           {/* Copy */}
