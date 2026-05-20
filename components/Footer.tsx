@@ -99,9 +99,17 @@ export default function Footer() {
             © {new Date().getFullYear()} Wise Guys Barbers. All rights
             reserved.
           </p>
-          <div className="text-cream/20 text-xs text-center sm:text-right">
-            <p>Site by <span className="text-cream/30">Alex Corduneanu</span></p>
-            <p className="text-cream/20 mt-0.5">a_corduneanu@icloud.com</p>
+          <div className="text-center sm:text-right">
+            <p className="text-sm">
+              Site by{" "}
+              <span className="text-gold font-semibold">Alex Corduneanu</span>
+            </p>
+            <p className="text-cream/40 text-xs mt-1">
+              Need a website for your business? Get in touch.
+            </p>
+            <p className="text-gold/70 text-xs mt-0.5">
+              a_corduneanu@icloud.com
+            </p>
           </div>
         </div>
       </div>
