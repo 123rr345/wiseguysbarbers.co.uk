@@ -9,8 +9,8 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background image — shop interior */}
       <Image
-        src={asset("/gallery/cut-08.jpg")}
-        alt="Wise Guys Barbers shop interior with hexagon lights"
+        src={asset("/shop-interior.jpg")}
+        alt="Inside Wise Guys Barbers — hexagon ceiling lights and barber chairs"
         fill
         className="object-cover"
         priority

@@ -101,7 +101,12 @@ export default function Footer() {
           </p>
           <p className="text-cream/20 text-xs">
             Site by{" "}
-            <span className="text-cream/30">Your Name Here</span>
+            <a
+              href="mailto:a_corduneanu@icloud.com"
+              className="text-cream/30 hover:text-gold transition-colors"
+            >
+              Alex Corduneanu
+            </a>
           </p>
         </div>
       </div>
