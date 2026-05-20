@@ -16,7 +16,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-dark">
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
             <div className="mb-4">
@@ -92,25 +92,29 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          {/* Web Design */}
+          <div>
+            <h4 className="font-serif text-lg font-semibold text-gold mb-4">
+              Website by
+            </h4>
+            <p className="text-cream text-sm font-semibold">
+              Alex Corduneanu
+            </p>
+            <p className="text-cream/40 text-sm mt-2 leading-relaxed">
+              Need a website for your business? Get in touch.
+            </p>
+            <p className="text-gold/70 text-sm mt-2">
+              a_corduneanu@icloud.com
+            </p>
+          </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-8 border-t border-white/10 text-center">
           <p className="text-cream/30 text-xs">
             © {new Date().getFullYear()} Wise Guys Barbers. All rights
             reserved.
           </p>
-          <div className="text-center sm:text-right">
-            <p className="text-sm">
-              Site by{" "}
-              <span className="text-gold font-semibold">Alex Corduneanu</span>
-            </p>
-            <p className="text-cream/40 text-xs mt-1">
-              Need a website for your business? Get in touch.
-            </p>
-            <p className="text-gold/70 text-xs mt-0.5">
-              a_corduneanu@icloud.com
-            </p>
-          </div>
         </div>
       </div>
     </footer>
