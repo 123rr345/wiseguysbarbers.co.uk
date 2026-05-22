@@ -7,14 +7,20 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryImages, categories } from "@/lib/gallery";
 import { asset } from "@/lib/config";
 
+const INITIAL_COUNT = 6;
+
 export default function Gallery() {
   const [filter, setFilter] = useState("All");
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [showAll, setShowAll] = useState(false);
 
   const filtered =
     filter === "All"
       ? galleryImages
       : galleryImages.filter((img) => img.category === filter);
+
+  const visible = showAll ? filtered : filtered.slice(0, INITIAL_COUNT);
+  const hasMore = filtered.length > INITIAL_COUNT;
 
   const openLightbox = (index: number) => setLightbox(index);
   const closeLightbox = () => setLightbox(null);
@@ -48,7 +54,7 @@ export default function Gallery() {
           {categories.map((cat) => (
             <button
               key={cat}
-              onClick={() => setFilter(cat)}
+              onClick={() => { setFilter(cat); setShowAll(false); }}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                 filter === cat
                   ? "bg-gold text-dark"
@@ -63,7 +69,7 @@ export default function Gallery() {
         {/* Masonry grid */}
         <motion.div layout className="masonry">
           <AnimatePresence mode="popLayout">
-            {filtered.map((img, i) => (
+            {visible.map((img, i) => (
               <motion.div
                 key={img.src}
                 layout
@@ -93,6 +99,23 @@ export default function Gallery() {
             ))}
           </AnimatePresence>
         </motion.div>
+
+        {/* See More / Show Less button */}
+        {hasMore && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-center mt-10"
+          >
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="border-2 border-gold/40 hover:border-gold text-gold hover:bg-gold hover:text-dark font-semibold px-10 py-3 rounded text-sm uppercase tracking-wider transition-all"
+            >
+              {showAll ? "Show Less" : `See More (${filtered.length - INITIAL_COUNT}+)`}
+            </button>
+          </motion.div>
+        )}
 
         {/* Instagram CTA */}
         <motion.div
