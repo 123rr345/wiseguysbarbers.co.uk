@@ -5,7 +5,7 @@ import { MapPin, Phone, Clock, Navigation } from "lucide-react";
 
 const hours = [
   { days: "Monday – Thursday", time: "8:00 AM – 6:30 PM" },
-  { days: "Friday – Saturday", time: "8:00 AM – 6:00 PM" },
+  { days: "Friday – Saturday", time: "8:00 AM – 7:00 PM" },
   { days: "Sunday", time: "9:00 AM – 4:00 PM" },
 ];
 
